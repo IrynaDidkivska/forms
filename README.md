@@ -30,7 +30,7 @@ Reactive form with:
 1. Clone the repository:
    ```sh
    git clone https://github.com/IrynaDidkivska/forms.git
-   cd fitness-app
+   cd forms
    ```
 2. Install dependencies:
    ```sh
