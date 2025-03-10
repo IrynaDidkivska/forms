@@ -1,0 +1,43 @@
+$purple-dark: #6b48ff;
+$purple-light: #b19cd9;
+$pink: #ff6f91;
+$teal: #54d7c7;
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, $purple-light, $teal);
+}
+
+.sidebar {
+  width: 250px;
+  background: $purple-dark;
+  color: white;
+  padding: 20px;
+  h2 {
+    margin: 0 0 20px;
+    color: $pink;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      &:hover {
+        background: $pink;
+      }
+      &.active {
+        background: $teal;
+      }
+    }
+  }
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}

@@ -1,0 +1,101 @@
+$purple-dark: #6b48ff;
+$pink: #ff6f91;
+$teal: #54d7c7;
+
+.unicorn-form {
+  max-width: 400px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  .form-group {
+    margin-bottom: 15px;
+    label {
+      color: $purple-dark;
+    }
+    input {
+      width: 90%;
+      padding: 8px;
+      border: 2px solid $teal;
+      border-radius: 5px;
+      &:focus {
+        border-color: $pink;
+        outline: none;
+      }
+      &.ng-invalid.ng-touched {
+        border-color: $pink;
+      }
+    }
+    input[type="checkbox"] {
+      width: 20px;
+    }
+  }
+  .hobby-group {
+    input {
+      width: 90%;
+      margin-bottom: 8px;
+      padding: 8px;
+      border: 2px solid $teal;
+      border-radius: 5px;
+      &:focus {
+        border-color: $pink;
+        outline: none;
+      }
+      &.ng-invalid.ng-touched {
+        border-color: $pink;
+      }
+    }
+    .remove {
+      background: $pink;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background: $purple-dark;
+      }
+    }
+  }
+  button[type="submit"] {
+    background: $purple-dark;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background: $pink;
+    }
+    &:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+  }
+  button[type="button"] {
+    background: $teal;
+    color: white;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .error {
+    color: $pink;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+.hobbies {
+  display: block;
+  margin-bottom: 5px;
+  color: $purple-dark;
+}
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background: $teal;
+  color: white;
+  border-radius: 5px;
+}

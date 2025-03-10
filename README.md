@@ -1,59 +1,46 @@
 # Forms
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+Angular 19 application showcasing form handling with a unicorn-inspired design. This project demonstrates template-driven and reactive forms, including validation, dynamic fields, and routing with a sidebar layout.
 
-## Development server
+## Overview
 
-To start a local development server, run:
+Task 1: A simple form with two-way binding using ngModel.
+Task 2-4: An advanced reactive form with validation, dynamic hobby fields, and error messaging.
 
-```bash
-ng serve
-```
+## Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Routing:
 
-## Code scaffolding
+Sidebar navigation between Task 1 and Task 2-4 components.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Task 1:
 
-```bash
-ng generate component component-name
-```
+Template-driven form with email and password fields, two-way binding, and JSON output.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Task 2-4:
 
-```bash
-ng generate --help
-```
+Reactive form with:
+-- Email and password validation.
+-- Checkbox requirement.
+-- Dynamic FormArray for hobbies.
+-- Error messages and form reset on submission.
 
-## Building
+## Installation
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/IrynaDidkivska/forms.git
+   cd fitness-app
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Run the application:
+   ```sh
+   ng serve
+   ```
+4. Open in browser:
+   ```sh
+   http://localhost:4200/
+   ```

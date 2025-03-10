@@ -1,0 +1,48 @@
+$purple-dark: #6b48ff;
+$pink: #ff6f91;
+$teal: #54d7c7;
+
+.unicorn-form {
+  max-width: 400px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  .form-group {
+    margin-bottom: 15px;
+    label {
+      color: $purple-dark;
+    }
+    input {
+      width: 90%;
+      padding: 8px;
+      border: 2px solid $teal;
+      border-radius: 5px;
+      &:focus {
+        border-color: $pink;
+        outline: none;
+      }
+      &.ng-invalid.ng-touched {
+        border-color: $pink;
+      }
+    }
+  }
+  button {
+    background: $purple-dark;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background: $pink;
+    }
+  }
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background: $teal;
+  color: white;
+  border-radius: 5px;
+}
